@@ -9,7 +9,6 @@ To download the project follow the instructions bellow
 
 git clone https://github.com/adbertomelo/flashcards-am.git
 
-#Install server
 cd flashcards-am
 
 Install dependencies and run with:
@@ -17,7 +16,4 @@ Install dependencies and run with:
 yarn
 ```
 yarn install
-```
-
-#Run
 yarn start
