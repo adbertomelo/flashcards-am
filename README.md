@@ -2,6 +2,9 @@
 
 This repository contains my implementation of Flashcards app mobile. This is the third project of three  Udacity's React Fundamentals course.
 
+## Tested with
+
+The application was tested using a Android(Galaxy J5 Prime) device, I don't have a IPhone device to test the app with it.
 
 # Installing
 

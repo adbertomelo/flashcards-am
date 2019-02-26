@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Container } from 'native-base';
 import { connect } from 'react-redux';
 import * as fn from '../utils/fn'
-import { clearLocalNotification, setLocalNotification } from '../services';
 
 import {
   StyleSheet, Text, View
@@ -47,7 +46,6 @@ class DeckDetail extends React.Component {
         <Button light style={styles.btnQuiz}
           onPress={() => {
             navigation.navigate("Quiz", { title });
-            clearLocalNotification().then(setLocalNotification);            
           }}
         >
           <Text>Start Quiz</Text>

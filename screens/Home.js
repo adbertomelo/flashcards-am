@@ -3,6 +3,7 @@ import { fetchDecks } from '../actions';
 import React, { Component } from 'react'
 import DeckListItem from '../components/DeckListItem'
 import ActionButton from 'react-native-action-button'
+import { setLocalNotification } from '../services';
 
 import { 
     Container, 
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
 class Home extends React.Component {
 
   componentDidMount() {
+    setLocalNotification()
     this.props.getDecks()
   }
 

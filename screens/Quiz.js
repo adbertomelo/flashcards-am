@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import {
   Container, Card, CardItem, Body, Content
 } from 'native-base';
+import { clearLocalNotification } from '../services';
 
 
 class Quiz extends React.Component {
@@ -27,6 +28,7 @@ class Quiz extends React.Component {
     if (currPos >= numQuestions) {
       currPos = numQuestions - 1
       this.setState({ finish: true })
+      clearLocalNotification();
     }
 
     return currPos
